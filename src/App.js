@@ -1,6 +1,6 @@
 /* eslint-disable */
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import Input from './input/Input';
 import Working from './Working/Working';
@@ -16,6 +16,8 @@ let[input제목, setInput제목] = useState('');
 let[input내용, setInput내용] = useState('');
 
 
+
+
   return (
     <div className="App">
       <div className='title'>
@@ -25,7 +27,7 @@ let[input내용, setInput내용] = useState('');
 
       <div className='container_input'>
        
-        <Input 제목={제목} 내용={내용} set제목={set제목} set내용={set내용} input제목={input제목} input내용={input내용} setInput제목={setInput제목} setInput내용={setInput내용}></Input>
+        <Input 제목={제목} 내용={내용} set제목={set제목} set내용={set내용} input제목={input제목} input내용={input내용} setInput제목={setInput제목} setInput내용={setInput내용} ></Input>
       
       </div>
 

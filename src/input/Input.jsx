@@ -8,7 +8,7 @@ function Input(props){
                 내용 <input value={props.input내용} onChange={(e)=>{props.setInput내용(e.target.value); e.stopPropagation()}}/></div>
         </div>
         <div className='container_input_2'>
-          <button style={{float: 'right'}} onClick={(e)=>{
+          <button style={{float: 'right'}} onClick={()=>{
             let copy = [...props.제목];
             let copy2 = [...props.내용];
             copy.push(props.input제목);

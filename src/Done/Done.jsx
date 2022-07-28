@@ -1,7 +1,10 @@
+import { Col } from 'react-bootstrap';
+
 function Done(props) {
 return(
     props.d제목.map((val,i)=>{
         return(
+        <Col>
           <div className='todo_list'>
             <h3 style={{marginLeft:'10px'}}>{props.d제목[i]}</h3>
             <p style={{marginLeft:'10px'}}>{props.d내용[i]}</p>
@@ -29,6 +32,7 @@ return(
               props.setd내용(copy4);
             }}>취소</button>
           </div>
+        </Col>
         );
       })
     );  

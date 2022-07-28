@@ -30,10 +30,6 @@
   width: 100%;
 
 }
-.container_todo{
-  display: flex;
-  flex-direction: row;
-}
 
 .todo_list {
   border: 2px solid rgb(32, 213, 32);
